@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seymtec SAS</title>
+    <link rel="stylesheet" href="diseño.css">
+    <style>
+        /* Agrega estilos específicos aquí si es necesario */
+        .services-section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+        }
+        .service-img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .service-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .service-description {
+            margin-top: 10px;
+        }
+        .toggle-services {
+            background-color: blue; /* Color de fondo azul */
+            color: white; /* Texto en blanco */
+            font-size: 16px; /* Tamaño de fuente aumentado */
+            padding: 10px 20px; /* Espaciado interno aumentado */
+            border: none; /* Sin borde */
+            cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+            transition: background-color 0.3s, color 0.3s; /* Transición suave */
+            margin-top: 20px; /* Espacio entre botones */
+        }
+        .toggle-services:hover {
+            background-color: white; /* Cambiar el color de fondo a blanco */
+            color: blue; /* Cambiar el color del texto a azul */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logoseymtec.png" alt="Logo Seymtec">
+        <h1>Ingeniería y servicios integrales</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#¿Quienes Somos?">¿Quienes Somos?</a></li>
+                <li><a href="#Servicios">Servicios</a>
+                    <ul>
+                        <li><a href="#Servicios Energeticos">Servicios Energéticos</a></li>
+                        <li><a href="#mantenimiento-locativo">Mantenimiento Locativo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Teléfono: 323-253-1506
+            <br>
+            info@seymtecsas.com
+        </p>
+    </header>
+    
+    
+    <section class="about-section" id="¿Quienes Somos?">
+        <div class="about-content">
+            <h2>¿QUIENES SOMOS?</h2>
+            <p>SEYMTEC S.A.S, está conformada por profesionales con amplio conocimiento y experiencia en la industria Colombiana, enfocándonos en líneas de ingeniería y servicios, lo cual permite generar soluciones integrales garantizando a nuestros clientes eficiencia y eficacia en los proyectos y servicios que ejecutamos a nivel nacional. Nos caracterizamos por ser una empresa dinámica, comprometida y enfocada a transmitir un mensaje de responsabilidad y sostenibilidad medioambiental, de manera estratégica en ambientes residenciales, comerciales e industriales, de modo que genere atracción y empatía en los clientes, proporcionando huella verde única, con los mejores niveles de calidad y el más alto valor agregado.</p>
+        </div>
+    </section>
+    
+
+    <section class="services-section" id="Servicios Energeticos">
+        <h2>SERVICIOS ENERGETICOS:</h2>
+        
+        <div class="services-group">
+            <div class="services" id="instalaciones-electricas">
+                <img class="service-img" src="imagenes/inst electricas.png" alt="Instalaciones Eléctricas">
+                <h3 class="service-title">Instalaciones Eléctricas Industriales y Residenciales</h3>
+                <p class="service-description service-more">Ofrecemos soluciones integrales para instalaciones eléctricas industriales y residenciales, garantizando un diseño eficiente, una instalación segura y un funcionamiento fiable. Nuestro equipo de expertos se encarga de cada paso del proceso, desde la planificación hasta la implementación, para asegurar que sus necesidades de energía sean cubiertas con excelencia y precisión.</p>
+                <button class="toggle-description" data-service="instalaciones-electricas">Ver más</button>
+            </div>
+
+            <div class="services" id="iluminacion">
+                <img class="service-img" src="imagenes/iluminacion.png" alt="Iluminación en General">
+                <h3 class="service-title">Iluminación en General</h3>
+                <p class="service-description service-more">Desde diseño y planificación hasta instalación, nos comprometemos a crear ambientes luminosos que mejoren la funcionalidad, estética y eficiencia energética de cualquier espacio, ya sea residencial, comercial o industrial.</p>
+                <button class="toggle-description" data-service="iluminacion">Ver más</button>
+            </div>
+            
+            <div class="services" id="redes-electricas">
+                <img class="service-img" src="imagenes/baja tension.jpg" alt="Redes Eléctricas de Media y Baja Tensión">
+                <h3 class="service-title">Redes Eléctricas de Media y Baja Tensión</h3>
+                <p class="service-description service-more">Nos comprometemos a garantizar la seguridad, confiabilidad y eficiencia de las redes eléctricas, cumpliendo con las normativas nacionales e internacionales más rigurosas.</p>
+                <button class="toggle-description" data-service="redes-electricas">Ver más</button>
+            </div>
+
+            <div class="services" id="fibraoptica">
+                <img class="service-img" src="imagenes/fibra optica.png" alt="fibra optica">
+                <h3 class="service-title">Fibra Optica</h3>
+                <p class="service-description service-more">Ofrecemos servicios profesionales de conectorización y tendido de fibra óptica para garantizar una conectividad rápida, segura y confiable en tus instalaciones.</p>
+                <button class="toggle-description" data-service="fibraoptica">Ver más</button>
+            </div>
+
+            <div class="services" id="Diseños electricos">
+                <img class="service-img" src="imagenes/diseño.png" alt="diseños electricos">
+                <h3 class="service-title">Diseños electricos</h3>
+                <p class="service-description service-more">Con un enfoque meticuloso en la eficiencia energética, seguridad y cumplimiento de normativas, nuestros diseñadores trabajan en estrecha colaboración con nuestros clientes para desarrollar soluciones innovadoras y funcionales. Ya sea para instalaciones residenciales, comerciales o industriales, nuestro equipo altamente cualificado garantiza un diseño eléctrico preciso, confiable y de vanguardia, diseñado para optimizar el rendimiento y maximizar la seguridad.</p>
+                <button class="toggle-description" data-service="Diseños electricos">Ver más</button>
+            </div>
+
+            <div class="services" id="Puesta A Tierra">
+                <img class="service-img" src="imagenes/puesta a tierra.jpg" alt="puesta a tierra">
+                <h3 class="service-title">Puesta A Tierra</h3>
+                <p class="service-description service-more">Nuestro servicio de instalación de sistemas de puesta a tierra garantiza la seguridad y estabilidad eléctrica óptima. Conforme a las normativas vigentes, implementamos soluciones eficientes y confiables para proteger sus instalaciones y equipos, asegurando la continuidad del suministro eléctrico y minimizando riesgos</p>
+                <button class="toggle-description" data-service="Puesta A Tierra">Ver más</button>
+            </div>
+
+            <div class="services" id="Adecuaciones-Electricas">
+                <img class="service-img" src="imagenes/Adecuaciones electricas.png" alt="Adecuaciones-Electricas">
+                <h3 class="service-title">Adecuaciones Eléctricas en
+                    Construcciones Existentes</h3>
+                <p class="service-description service-more">Realizamos adecuaciones eléctricas precisas y eficientes en construcciones existentes para garantizar un sistema eléctrico seguro y funcional. Desde la evaluación inicial hasta la implementación, nuestro equipo de expertos trabaja para optimizar la infraestructura eléctrica, adaptándola a las necesidades actuales y normativas vigentes. </p>
+                <button class="toggle-description" data-service="Adecuaciones-Electricas">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Distribucion-de-material-electrico">
+                <img class="service-img" src="imagenes/distribucion.png" alt="Distribucion-de-material-electrico">
+                <h3 class="service-title">Distribución de material eléctrico,
+                    maniobra y control</h3>
+                <p class="service-description service-more">Nos especializamos en la distribución estratégica de material eléctrico de calidad, así como en la planificación y ejecución de maniobras y controles eléctricos. Desde la selección de los componentes adecuados hasta la instalación y puesta en marcha, nuestro equipo garantiza un manejo eficiente y seguro de la energía eléctrica en su proyecto. Con un enfoque en la innovación y la fiabilidad, ofrecemos soluciones integrales para optimizar la distribución eléctrica y asegurar un funcionamiento fluido y seguro de sus sistemas eléctricos. </p>
+                <button class="toggle-description" data-service="Distribucion-de-material-electrico">Ver más</button>
+            </div>
+
+
+            <div class="services" id="cctv">
+                <img class="service-img" src="imagenes/cctv.png" alt="cctv circuito cerrado de
+                televisión y sistemas de acceso">
+                <h3 class="service-title">Cctv Circuito Cerrado De
+                    Televisión y Sistemas De Acceso</h3>
+                <p class="service-description service-more">Ofrecemos soluciones completas en CCTV y sistemas de acceso, proporcionando vigilancia continua y control de acceso eficaz para proteger sus instalaciones y activos. Desde la instalación de cámaras de alta definición hasta la implementación de sistemas de control de acceso, nuestro equipo garantiza una vigilancia confiable y una gestión eficiente de la seguridad. Con tecnología de vanguardia y un enfoque en la prevención de riesgos, brindamos tranquilidad y protección a nuestros clientes, asegurando la integridad y seguridad de sus espacios físicos y recursos. </p>
+                <button class="toggle-description" data-service="cctv">Ver más</button>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="services-section" id="mantenimiento-locativo">
+        <h2>MANTENIMIENTOS LOCATIVOS:</h2>
+        
+        <!-- Aquí puedes agregar los servicios de mantenimiento locativo -->
+        <div class="services-group">
+            <!-- Agrega aquí los servicios de mantenimiento locativo -->
+
+            <div class="services" id="Conford-Aires-Acondicionados">
+                <img class="service-img" src="imagenes/conford aires.png" alt="conford aires">
+                <h3 class="service-title">Conford Aires Acondicionados</h3>
+                <p class="service-description service-more">Nuestro servicio de mantenimiento
+                    preventivo y correctivo está diseñado
+                    para maximizar la eficiencia y vida útil
+                    de sus equipos de aire acondicionado.
+                    Realizamos inspecciones regulares,
+                    limpieza exhaustiva de filtros y
+                    componentes, y ajustes necesarios para
+                    prevenir problemas futuros. </p>
+                <button class="toggle-description" data-service="Conford-Aires-Acondicionados">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Conford-Servicios">
+                <img class="service-img" src="imagenes/aires acond.png" alt="Conford Servicios">
+                <h3 class="service-title">Conford Servicios</h3>
+                <p class="service-description service-more">
+                    - Verificación del estado actual.
+                    <br>
+                    - Ejecución de mantenimiento preventivo en la unidad condensadora.
+                    <br>
+                    - Ejecución de mantenimiento preventivo en la unidad manejadora.
+                    <br>
+                    - Verificación del correcto funcionamiento de la unidad central.
+                    <br>
+                    - Revisión del cableado y conexiones.
+                    <br>
+                    - Prueba de funcionamiento de los sensores.
+                    <br>
+                    - Pruebas de funcionamiento de la evaporadora.
+                    <br>
+                    - Control y verificación de parámetros de calor y frío, RPM, PSIG.
+                    <br>
+                    - Creación de hojas de vida para cada equipo.
+                </p>
+                <button class="toggle-description" data-service="Conford-Servicios">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Conford-Beneficios">
+                <img class="service-img" src="imagenes/conford beneficios.jpg" alt="conford beneficios">
+                <h3 class="service-title">Conford Beneficios</h3>
+                <p class="service-description service-more">
+                    -Mayor eficiencia energética.
+                    <br>
+                    -Reducción de costos a largo plazo.
+                    <br>
+                    -Prevención de fallos y tiempos de
+                    inactividad.
+                    <br>
+                    -Respuesta rápida ante emergencias.
+                    <br>
+                    -Minimización de interrupciones en su
+                    entorno.
+                    <br>
+                    -Restauración de la comodidad y la
+                    calidad del aire.
+                </p>
+                <button class="toggle-description" data-service="Conford-Beneficios">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Mobiliario">
+                <img class="service-img" src="imagenes/mobiliario.png" alt="Mobiliario">
+                <h3 class="service-title">Mobiliario</h3>
+                <p class="service-description service-more">Con nuestros servicios especializados,
+                    nos comprometemos a preservar y
+                    realzar la vida útil de sus mobiliarios,
+                    garantizando un entorno elegante y
+                    cómodo. Descubra cómo nuestro
+                    enfoque meticuloso y nuestro equipo
+                    experto pueden mantener sus
+                    muebles en óptimas condiciones,
+                    agregando valor y estilo a su espacio.
+                </p>
+                <button class="toggle-description" data-service="Mobiliario">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Mobiliario-Servicios">
+                <img class="service-img" src="imagenes/mobiliario servicios.png" alt="Mobiliario servicios">
+                <h3 class="service-title">Mobiliario Servicios</h3>
+                <p class="service-description service-more">1.Reparaciones y Ajustes:
+                    <br>
+                    Evaluación y reparación de daños
+                    estructurales.
+                    <br>
+                    Ajuste de herrajes y componentes sueltos.
+                    <br>
+                    Sustitución de piezas dañadas o
+                    desgastadas.
+                    <br>
+                    2.Mantenimiento de Sillas y Asientos:
+                    Verificación y ajuste de mecanismos de
+                    elevación y reclinación.
+                    <br>
+                    Cambio de ruedas desgastadas.
+                    Reemplazo de tapicería si es necesario.
+                    <br>
+                    3.Cuidado de Superficies:
+                    Protección de superficies contra rasguños y
+                    desgaste.
+                    <br>
+                    Aplicación de productos para mantener la
+                    integridad de la madera o el metal.
+                </p>
+                <button class="toggle-description" data-service="Mobiliario-Servicios">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Mobiliario-Beneficios">
+                <img class="service-img" src="imagenes/beneficios mobiliairo.png" alt="Mobiliario Beneficios">
+                <h3 class="service-title">Mobiliario - Beneficios</h3>
+                <p class="service-description service-more">Brindamos soluciones integrales para el mantenimiento de mobiliario en espacios de trabajo, públicos o residenciales. Nos comprometemos a garantizar ambientes funcionales y estéticamente agradables mediante la atención y resolución de problemas relacionados con el mobiliario. Nuestro objetivo es optimizar la experiencia del usuario y prolongar la vida útil del mobiliario, brindando comodidad y eficiencia en cada entorno.
+                </p>
+                <button class="toggle-description" data-service="Mobiliario-Beneficios">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Obra-civil-Locativos">
+                <img class="service-img" src="imagenes/limpieza de fachadas.jpg" alt="Obra civil">
+                <h3 class="service-title">Obra Civil Locativos</h3>
+                <p class="service-description service-more">Nuestro servicio de mantenimiento
+                    preventivo en obra civil se enfoca en
+                    preservar la integridad de sus estructuras.
+                    Cuando surgen problemas, nuestro
+                    equipo de expertos en obra civil actúa
+                    rápidamente para solucionarlos.
+                </p>
+                <button class="toggle-description" data-service="Obra-civil-Locativos">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Obra-civil-Servicios">
+                <img class="service-img" src="imagenes/obra civil servicios.jpg" alt="Obra civil servicios">
+                <h3 class="service-title">Obra Civil Servicios</h3>
+                <p class="service-description service-more">1. Ornamentacion:
+                    <br>
+                    Diseño e instalación de puertas
+                    <br>
+                    Diseño e instalación de ventanas
+                    <br>
+                    Diseño e instalación de rejas
+                    <br>
+                    2.Carpinteria:
+                    <br>
+                    Diseño e instalación de puertas
+                    <br>
+                    Diseño e instalación de ventanas
+                    <br>
+                    Diseño e instalación de guarda escobas
+                    <br>
+                    Arreglo de puertas, ventanas y guarda
+                    escobas
+                    <br>
+                    3.Pañete:
+                    <br>
+                    Techos, muros y columnas
+                    <br>
+                    4. Mamposteria :
+                    <br>
+                    Levantamiento de muros en bloque y/o ladrillo.
+                    <br>
+                    5. Pintura:
+                    <br>
+                    Pintura de interiores.
+                    <br>
+                    Pintura de exteriores.
+                    <br>
+                    Estuco.
+                    <br>
+                    6. Impermeabilizacion:
+                    <br>
+                    Techos internos, Tejados, Paredes.
+                    <br>
+                    Canales, Bajantes
+                    
+                </p>
+                <button class="toggle-description" data-service="Obra-civil-Servicios">Ver más</button>
+            </div>
+
+
+            <div class="services" id="Servicios-Especificos">
+                <img class="service-img" src="imagenes/servicios especificos.png" alt="Servicios Especificos">
+                <h3 class="service-title">Servicios Especificos</h3>
+                <p class="service-description service-more">Nuestro nuestros servicios
+                    específicos, estan diseñados
+                    para abordar las necesidades
+                    particulares de nuestros
+                    clientes con precisión y
+                    profesionalismo.
+                    <br>
+                    Entre ellos:
+                    <br>
+                    1.Cerrajeria
+                    <br>
+                    2. Revision,mto,instalacion de paneles solares
+                </p>
+                <button class="toggle-description" data-service="Servicios-Especificos">Ver más</button>
+            </div>
+            
+
+
+    </section>
+    
+    
+    <footer>
+        <!-- Sección de la imagen de fondo -->
+        <section id="imagen-contacto"></section>
+    
+        <!-- Sección del formulario de contacto -->
+        <section id="formulario-contacto">
+            <h2>Contáctanos</h2>
+            <form action="enviar_formulario.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    <br>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    
+        <!-- Pie de página final -->
+        <section class="footer-bottom">
+            <p>Derechos de autor © 2024 Seymtec Sas - Ingeniería y servicios integrales</p>
+        </section>
+    </footer>
+    
+    
+    
+    
+    
+
+    <script>
+        // JavaScript para controlar el botón de "Ver más/Ver menos"
+        const toggleButtons = document.querySelectorAll('.toggle-description');
+    
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const serviceId = button.getAttribute('data-service');
+                const serviceDescription = document.getElementById(serviceId).querySelector('.service-description');
+                // Alternar la visibilidad de la descripción del servicio
+                serviceDescription.classList.toggle('show');
+                // Cambiar el texto del botón
+                button.textContent = serviceDescription.classList.contains('show') ? 'Ver menos' : 'Ver más';
+            });
+        });
+    </script>
+    
+
+
+    
+</body>
+</html>

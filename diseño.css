@@ -1,0 +1,320 @@
+/* Estilos generales */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+
+/* Estilos para dispositivos de pantalla pequeña (móviles) */
+@media only screen and (max-width: 600px) {}
+    /* Ajustar el tamaño de las imágenes de los servicios */
+    .service-img {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+/* Estilos para el encabezado */
+header {
+    background-color: #0abedae8;
+    color: hsl(0, 20%, 97%);
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1450px; /* Ancho máximo */
+    margin: 0 auto;
+}
+
+header img {
+    max-width: 800px; /* Ajusta el tamaño máximo del logo */
+    margin-bottom: 10px; /* Ajusta el espacio entre el logo y el texto */
+}
+
+header h1 {
+    text-shadow: 4px 4px 4px #202020;
+    margin-bottom: 30px;
+    font-size: 60px; /* Ajusta el tamaño del texto del título */
+}
+
+header p { 
+    margin-bottom: 10px;
+    text-shadow:2px 2px 2px #070707;
+    font-size: 20px;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    font-size: 30px ;
+    background-color: #656060;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex ;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #0abedae8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #070707;
+}
+
+/* Estilos para las secciones de mantenimientos e instalaciones eléctricas */
+.services-section {
+    /* Estilos de la sección */
+    max-width: 1400px; /* Ancho máximo */
+    margin-bottom: 25px; /* Espacio inferior */
+    background-color: #60cfeb;
+}
+
+.services-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Espacio entre grupos */
+    
+}
+
+.services {
+    width: calc(32% - 15px); /* Ajusta el ancho de cada servicio */
+    padding: 10px; /* Relleno interno */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.services:hover {
+    background-color: #8ac6d1; /* Cambia el color de fondo al pasar el cursor */
+}
+
+
+.service-img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.service-title {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.service-description {
+    margin-top: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #60cfeb;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    max-width: 1450px; /* Ancho máximo */
+    margin: 20px auto; /* Centrado horizontal */
+}
+
+
+/* Estilos CSS para ocultar la descripción por defecto */
+.service-description {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: visibility 0s, opacity 0.5s ease-out, height 0.5s ease-out;
+}
+
+/* Estilos CSS para mostrar la descripción cuando se hace clic en el botón */
+.service-description.show {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
+/* Estilos CSS para el botón "Ver más/Ver menos" */
+.toggle-description {
+    background-color: blue; /* Color de fondo azul */
+    color: white; /* Texto en blanco */
+    font-size: 12px; /* Tamaño de fuente aumentado */
+    padding: 10px 20px; /* Espaciado interno aumentado */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    margin-top: 10px; /* Espacio entre botones */
+}
+
+/* Estilos CSS para cambiar los colores al pasar el cursor sobre el botón */
+.toggle-description:hover {
+    background-color: white; /* Cambiar el color de fondo a blanco */
+    color: blue; /* Cambiar el color del texto a azul */
+}
+
+/* Estilos para la sección de "Conócenos" */
+.about-section {
+    background-image: url('imagenes/conocenos.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: #ffffff; /* Color del texto a blanco */
+    height: calc(50vh - 100px); /* Calcula el tamaño de la sección */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo más oscuro */
+}
+
+.about-content {
+    max-width: 1300px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center; /* Alinea el texto horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor del texto */
+}
+
+.about-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #60cfeb; /* Color azul para el título */
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.about-content p {
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #000000;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: justify; /* Alinea el texto a la izquierda */
+}
+
+/* estilos barra de navegacion 2*/
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #656060; /* Color de fondo del menú desplegable */
+    border-radius: 0 0 3px 3px;
+    padding: 0;
+    font-size: 20px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 200px;
+}
+
+nav ul ul li a {
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+    display: block;
+}
+
+nav ul ul li a:hover {
+    background-color: #0abedae8; /* Cambiar el color de fondo al pasar el cursor */
+}
+
+
+
+/* Estilos para el pie de página */
+footer {
+    display: flex; /* Utiliza flexbox para colocar las secciones en fila */
+    flex-wrap: wrap; /* Permite que las secciones se ajusten automáticamente */
+    justify-content: center; /* Alinea las secciones horizontalmente */
+    background-color: #f0f0f0; /* Color de fondo temporal */
+    padding: 20px 0; /* Espaciado interno del pie de página */
+}
+
+/* Estilos para la sección de la imagen de fondo */
+#imagen-contacto {
+    flex: 1; /* La imagen ocupa todo el espacio disponible */
+    height: 500px; /* Altura de la sección, ajustar según sea necesario */
+    background-image: url('imagenes/contacto.png'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+}
+
+/* Estilos para el formulario de contacto */
+#formulario-contacto {
+    flex: 1; /* El formulario ocupa todo el espacio disponible */
+    padding: 20px; /* Espaciado interno del formulario */
+    background-color: #000000; /* Fondo del formulario */
+    color: white; /* Color del texto en el formulario */
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Estilos para los grupos de campos del formulario */
+.form-group {
+    margin-bottom: 20px; /* Espacio entre grupos de campos */
+}
+
+.form-group label {
+    display: block; /* Mostrar las etiquetas en una línea nueva */
+    margin-bottom: 5px; /* Espacio entre etiquetas y campos */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #333; /* Color de fondo del campo */
+    color: white; /* Color del texto */
+}
+
+.form-group textarea {
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+button[type="submit"] {
+    background-color: #0abeda; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+button[type="submit"]:hover {
+    background-color: #0979a9; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+
+/* Estilos para el pie de página final */
+.footer-bottom {
+    width: 100%; /* El pie de página final ocupa todo el ancho */
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px; /* Espacio superior */
+    background-color: #0abedae8;
+    text-align: center;
+}
+
+
