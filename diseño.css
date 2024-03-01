@@ -20,31 +20,32 @@ body {
 header {
     background-color: #0abedae8;
     color: hsl(0, 20%, 97%);
-    padding: 6vh; /* Cambiado a unidades de vh */
+    padding: 6vw; /* Cambiado a unidades de vw */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1450px; /* Ancho máximo */
+    max-width: 100%; /* Cambiado a 100% */
     margin: 0 auto;
 }
 
 header img {
-    max-width: 50vh; /* Cambiado a unidades de vh */
-    margin-bottom: 1vh; /* Cambiado a unidades de vh */
+    max-width: 80%; /* Cambiado a 80% */
+    margin-bottom: 2vw; /* Cambiado a unidades de vw */
 }
 
 header h1 {
-    text-shadow: 0.5vh 0.5vh 0.5vh #202020; /* Cambiado a unidades de vh */
-    margin-bottom: 2vh; /* Cambiado a unidades de vh */
-    font-size: 6vh; /* Cambiado a unidades de vh */
+    text-shadow: 0.5vw 0.5vw 0.5vw #202020; /* Cambiado a unidades de vw */
+    margin-bottom: 3vw; /* Cambiado a unidades de vw */
+    font-size: 6vw; /* Cambiado a unidades de vw */
 }
 
 header p { 
-    margin-bottom: 1vh; /* Cambiado a unidades de vh */
-    text-shadow: 0.3vh 0.3vh 0.3vh #070707; /* Cambiado a unidades de vh */
-    font-size: 2vh; /* Cambiado a unidades de vh */
+    margin-bottom: 2vw; /* Cambiado a unidades de vw */
+    text-shadow: 0.3vw 0.3vw 0.3vw #070707; /* Cambiado a unidades de vw */
+    font-size: 2.5vw; /* Cambiado a unidades de vw */
 }
+
 
 /* Estilos para la barra de navegación */
 nav ul {
@@ -73,23 +74,24 @@ nav ul li a:hover {
 
 /* Estilos para las secciones de mantenimientos e instalaciones eléctricas */
 .services-section {
-    max-width: 1400px; /* Ancho máximo */
-    margin-bottom: 2.5vh; /* Cambiado a unidades de vh */
+    max-width: 100%; /* Cambiado a 100% */
+    margin-bottom: 4vw; /* Cambiado a unidades de vw */
     background-color: #60cfeb;
+    padding: 4vw; /* Cambiado a unidades de vw */
 }
 
 .services-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1vh; /* Cambiado a unidades de vh */
+    margin-bottom: 2vw; /* Cambiado a unidades de vw */
 }
 
 .services {
-    width: calc(32% - 1.5vh); /* Cambiado a unidades de vh */
-    padding: 1vh; /* Cambiado a unidades de vh */
-    border: 2px solid #ccc;
-    border-radius: 1vh; /* Cambiado a unidades de vh */
+    width: calc(32% - 3vw); /* Cambiado a unidades de vw */
+    padding: 2vw; /* Cambiado a unidades de vw */
+    border: 0.2vw solid #ccc; /* Cambiado a unidades de vw */
+    border-radius: 2vw; /* Cambiado a unidades de vw */
     background-color: #ffffff;
 }
 
@@ -99,19 +101,20 @@ nav ul li a:hover {
 
 .service-img {
     width: 100%;
-    border-top-left-radius: 1vh; /* Cambiado a unidades de vh */
-    border-top-right-radius: 1vh; /* Cambiado a unidades de vh */
+    border-top-left-radius: 2vw; /* Cambiado a unidades de vw */
+    border-top-right-radius: 2vw; /* Cambiado a unidades de vw */
 }
 
 .service-title {
     font-weight: bold;
-    margin-top: 1vh; /* Cambiado a unidades de vh */
+    margin-top: 1vw; /* Cambiado a unidades de vw */
     text-align: center;
 }
 
 .service-description {
-    margin-top: 1vh; /* Cambiado a unidades de vh */
+    margin-top: 1vw; /* Cambiado a unidades de vw */
 }
+
 
 /* Estilos para el pie de página */
 footer {
@@ -123,14 +126,14 @@ footer {
     margin: 2vh auto; /* Centrado horizontal */
 }
 
-/* Estilos para la sección de "Conócenos" */
+* Estilos para la sección de "Conócenos" */
 .about-section {
     background-image: url('imagenes/conocenos.jpg');
     background-size: cover;
     background-position: center;
-    padding: 8vh 2vh;
+    padding: 8vw 2vw;
     color: #ffffff; /* Color del texto a blanco */
-    height: calc(50vh - 10vh); /* Calcula el tamaño de la sección */
+    height: auto; /* Cambiado a auto */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -149,32 +152,42 @@ footer {
 }
 
 .about-content {
-    max-width: 1300px;
+    max-width: 100%;
     width: 100%;
     color: #ffffff;
     text-align: center; /* Alinea el texto horizontalmente */
-    padding: 2vh; /* Agrega espacio alrededor del texto */
+    padding: 2vw; /* Agrega espacio alrededor del texto */
 }
 
 .about-content h2 {
-    font-size: 4.2vh; /* Cambiado a unidades de vh */
-    margin-bottom: 2vh; /* Cambiado a unidades de vh */
+    font-size: 4.2vw; /* Cambiado a unidades de vw */
+    margin-bottom: 2vw; /* Cambiado a unidades de vw */
     color: #60cfeb; /* Color azul para el título */
-    text-shadow: 0.2vh 0.2vh 0.2vh #000000; /* Cambiado a unidades de vh */
+    text-shadow: 0.2vw 0.2vw 0.2vw #000000; /* Cambiado a unidades de vw */
 }
 
 .about-content p {
-    font-size: 2.5vh; /* Cambiado a unidades de vh */
-    text-shadow: 0.2vh 0.2vh 0.2vh #000000; /* Cambiado a unidades de vh */
+    font-size: 2.5vw; /* Cambiado a unidades de vw */
+    text-shadow: 0.2vw 0.2vw 0.2vw #000000; /* Cambiado a unidades de vw */
     width: 100%; /* Ocupa todo el ancho disponible */
     text-align: justify; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #60cfeb;
+    color: #ffffff;
+    padding: 2vw;
+    text-align: center;
+    max-width: 100%; /* Cambiado a 100% */
+    margin: 2vw auto; /* Centrado horizontal */
 }
 
 /* Estilos para el pie de página final */
 .footer-bottom {
     width: 100%; /* El pie de página final ocupa todo el ancho */
     text-align: center; /* Alinea el texto al centro */
-    margin-top: 2vh; /* Cambiado a unidades de vh */
+    margin-top: 2vw; /* Cambiado a unidades de vw */
     background-color: #0abedae8;
     text-align: center;
 }
