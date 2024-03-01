@@ -52,7 +52,7 @@
             <ul>
                 <li><a href="#¿Quienes Somos?">¿Quienes Somos?</a></li>
                 <li><a href="#Servicios">Servicios</a>
-                    <ul>
+                    <ul class="dropdown-content">
                         <li><a href="#Servicios Energeticos">Servicios Energéticos</a></li>
                         <li><a href="#mantenimiento-locativo">Mantenimiento Locativo</a></li>
                     </ul>
@@ -420,6 +420,24 @@
             });
         });
     </script>
+
+<script>
+    // Obtener todos los elementos de lista de navegación principal
+    const navItems = document.querySelectorAll('nav > ul > li');
+
+    // Iterar sobre cada elemento de lista de navegación principal
+    navItems.forEach(item => {
+        // Agregar un controlador de eventos de clic a cada elemento
+        item.addEventListener('click', () => {
+            // Verificar si el elemento actual tiene un menú desplegable
+            const dropdownContent = item.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                // Ocultar el menú desplegable
+                dropdownContent.classList.toggle('show');
+            }
+        });
+    });
+</script>
     
 
 
