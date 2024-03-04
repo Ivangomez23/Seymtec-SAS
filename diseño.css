@@ -11,34 +11,20 @@ body {
 
 
 /* Estilos generales para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    /* Agrega tus estilos específicos para dispositivos móviles aquí */
+@media only screen and (max-width: 600px) 
+    /* Ajustes generales */
     body {
-        font-size: 14px; /* Reducir el tamaño de fuente para una mejor legibilidad en pantallas pequeñas */
+        font-size: 16px; /* Tamaño de fuente aumentado para una mejor legibilidad */
     }
     header {
-        text-align: center; /* Centrar el contenido del encabezado */
-    }
-    nav {
-        text-align: center; /* Centrar los elementos del menú */
+        padding: 30px; /* Reducción del espacio alrededor del encabezado */
     }
     nav ul {
-        padding-left: 0; /* Eliminar el relleno izquierdo de la lista */
-    }
-    nav ul li {
-        display: block; /* Mostrar los elementos de la lista como bloques */
-        margin-bottom: 10px; /* Añadir espacio entre elementos del menú */
-    }
-    nav ul ul {
-        display: none; /* Ocultar submenús por defecto */
-    }
-    nav ul li:hover > ul {
-        display: block; /* Mostrar submenús al pasar el ratón */
+        font-size: 18px; /* Tamaño de fuente aumentado para el menú */
     }
     footer {
-        text-align: center; /* Centrar el contenido del pie de página */
+        padding: 20px 10px; /* Reducción del espacio alrededor del pie de página */
     }
-}
 
 
 
@@ -126,7 +112,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin: 0; /* Eliminación del margen entre elementos del menú */
     display: block;
     padding: 10px;
     float: left; /* Alinea los elementos de la lista horizontalmente */
@@ -182,6 +168,13 @@ nav ul li ul li a {
 nav ul li:hover ul {
     display: block; /* Muestra el menú desplegable */
 }
+
+
+ /* Ajustes para la sección de contacto */
+ #imagen-contacto {
+    height: 300px; /* Altura reducida para dispositivos móviles */
+}
+
 
 /* Estilos para las secciones de mantenimientos e instalaciones eléctricas */
 .services-section {
@@ -426,4 +419,5 @@ button[type="submit"]:hover {
     margin-top: 20px; /* Espacio superior */
     background-color: #0abedae8;
     text-align: center;
+    color: #fff; /* Color de texto blanco */
 }
