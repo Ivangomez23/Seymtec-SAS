@@ -122,7 +122,7 @@ nav ul li a {
     display: block;  /* Hace que los elementos de la lista sean bloques */
     color: #0abedae8; /* Cambia el color del texto */
     transition: color 0.3s ease;
-    padding:12px 14px; /* Espaciado interno */
+    padding:12px 20px; /* Espaciado interno */
     text-decoration: none; /* Elimina la subrayado de los enlaces */
     text-align: center; /* Centra el texto */
 }
@@ -132,7 +132,7 @@ nav ul li ul {
     display: none; /* Oculta el menú desplegable por defecto */
     position: absolute; /* Posiciona el menú de forma absoluta */
     background-color: #333; /* Color de fondo del menú desplegable */
-    min-width: 40px; /* Ancho mínimo del menú desplegable */
+    min-width: 15px; /* Ancho mínimo del menú desplegable */
 }
 
 
@@ -140,6 +140,7 @@ nav ul li ul {
 nav ul li ul li {
     float: none; /* Restablece el estilo de flotación */
     position: relative; /* Posiciona los elementos relativamente */
+    min-width: 20px;
 }
 
 
@@ -159,9 +160,9 @@ nav ul li a:hover {
 
 
 nav ul li ul li a {
-    padding: 12px 16px; /* Espaciado interno */
+    padding: 10px 16px; /* Espaciado interno */
     text-align: left; /* Alinea el texto a la izquierda */
-    color: black; /* Cambia el color del texto */
+    color: rgb(255, 255, 255); /* Cambia el color del texto */
 }
 
 /* Muestra el menú desplegable al pasar el ratón sobre el elemento principal */
@@ -182,6 +183,18 @@ nav ul li:hover ul {
     max-width: 1400px; /* Ancho máximo */
     margin-bottom: 25px; /* Espacio inferior */
     background-color: #60cfeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para los servicios en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .services {
+        width: calc(100% - 20px); /* Ajusta el ancho de cada servicio para ocupar el ancho completo */
+        margin-bottom: 20px; /* Añade espacio entre servicios */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    }
 }
 
 .services-group {
@@ -192,13 +205,16 @@ nav ul li:hover ul {
     
 }
 
+
+/* Estilos para los servicios */
 .services {
-    width: calc(32.32% - 20px); /* Ajusta el ancho de cada servicio */
+    width: calc(33.33% - 8px); /* Ajusta el ancho de cada servicio */
     padding: 10px; /* Relleno interno */
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #ffffff;
     margin-bottom: 20px; /* Agregar espacio inferior entre servicios */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
 
 .services:hover {
@@ -214,12 +230,15 @@ nav ul li:hover ul {
     height: auto; /* Mantener la proporción de aspecto de las imágenes */
 }
 
+/* Estilos para los títulos de los servicios */
 .service-title {
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 18px; /* Reducir el tamaño de la fuente del título */
+    font-size: 16px; /* Reducción del tamaño de fuente */
+    height: 40px; /* Limita la altura para evitar que los títulos se desborden */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto desbordado */
+    margin-bottom: 10px; /* Espacio inferior entre los títulos y la descripción */
 }
+
 
 .service-description {
     margin-top: 10px;
@@ -350,17 +369,21 @@ nav ul ul li a:hover {
 footer {
     display: flex; /* Utiliza flexbox para colocar las secciones en fila */
     flex-wrap: wrap; /* Permite que las secciones se ajusten automáticamente */
-    justify-content: center; /* Alinea las secciones horizontalmente */
+    justify-content:space-between;; /* Alinea las secciones horizontalmente */
     background-color: #f0f0f0; /* Color de fondo temporal */
     padding: 20px 0; /* Espaciado interno del pie de página */
+    align-items: center;
+    height: 300px; /* Altura de la sección, ajustar según sea necesario */
 }
 
 /* Estilos para la sección de la imagen de fondo */
 #imagen-contacto {
     flex: 1; /* La imagen ocupa todo el espacio disponible */
-    height: 500px; /* Altura de la sección, ajustar según sea necesario */
+    height: 300px; /* Altura de la sección, ajustar según sea necesario */
     background-image: url('imagenes/contacto.png'); /* Imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-size: contain; /* Ajusta la imagen para que cubra toda la sección */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center; /* Centra la imagen */
 }
 
 /* Estilos para el formulario de contacto */
@@ -372,6 +395,16 @@ footer {
     text-align: center;
     max-width: 300px;
     margin: 0 auto;
+    
+}
+
+/* Estilos para el formulario de contacto en dispositivos móviles */
+@media only screen and (max-width: 900px) {
+    #formulario-contacto {
+        max-width: 100%; /* Ajusta el ancho máximo al 100% */
+        padding: 10px; /* Reducción del espaciado interno */
+        margin: 0; /* Eliminación del margen */
+    }
 }
 
 /* Estilos para los grupos de campos del formulario */
