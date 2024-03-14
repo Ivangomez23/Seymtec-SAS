@@ -5,43 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seymtec SAS</title>
     <link rel="stylesheet" href="diseño.css">
-    <style>
-        /* Agrega estilos específicos aquí si es necesario */
-        .services-section {
-            padding: 20px;
-            margin: 20px auto;
-            background-color: #f2f2f2;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 1100px;
-        }
-        .service-img {
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-        .service-title {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .service-description {
-            margin-top: 10px;
-        }
-        .toggle-services {
-            background-color: blue; /* Color de fondo azul */
-            color: white; /* Texto en blanco */
-            font-size: 16px; /* Tamaño de fuente aumentado */
-            padding: 10px 20px; /* Espaciado interno aumentado */
-            border: none; /* Sin borde */
-            cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-            transition: background-color 0.3s, color 0.3s; /* Transición suave */
-            margin-top: 20px; /* Espacio entre botones */
-        }
-        .toggle-services:hover {
-            background-color: white; /* Cambiar el color de fondo a blanco */
-            color: blue; /* Cambiar el color del texto a azul */
-        }
-    </style>
+    
 </head>
 <body>
     <header>
@@ -377,22 +341,18 @@
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
-                    <br>
                 </div>
                 <div class="form-group">
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" required>
-                    <br>
                 </div>
                 <div class="form-group">
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-                    <br>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        
     
         <!-- Pie de página final -->
         <section class="footer-bottom">
@@ -400,47 +360,51 @@
         </section>
     </footer>
     
-    
-    
-    
-    
-
     <script>
-        // JavaScript para controlar el botón de "Ver más/Ver menos"
-        const toggleButtons = document.querySelectorAll('.toggle-description');
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButtons = document.querySelectorAll('.toggle-description');
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const serviceId = button.getAttribute('data-service');
+                    const serviceContainer = document.getElementById(serviceId);
+                    const serviceDescription = serviceContainer.querySelector('.service-description');
+                    const serviceImage = serviceContainer.querySelector('.service-img');
+        
+                    if (!serviceDescription.classList.contains('show')) {
+                        // Ocultar otros servicios abiertos
+                        document.querySelectorAll('.service-description').forEach(desc => {
+                            desc.classList.remove('show');
+                        });
+                        document.querySelectorAll('.service-img').forEach(img => {
+                            img.classList.remove('show');
+                        });
+                        document.querySelectorAll('.toggle-description').forEach(btn => {
+                            btn.textContent = 'Ver más';
+                        });
     
-        toggleButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const serviceId = button.getAttribute('data-service');
-                const serviceDescription = document.getElementById(serviceId).querySelector('.service-description');
-                // Alternar la visibilidad de la descripción del servicio
-                serviceDescription.classList.toggle('show');
-                // Cambiar el texto del botón
-                button.textContent = serviceDescription.classList.contains('show') ? 'Ver menos' : 'Ver más';
+                        // Mostrar el servicio seleccionado
+                        serviceDescription.classList.add('show');
+                        serviceImage.classList.add('show');
+                        serviceContainer.classList.add('expanded');
+                        button.textContent = 'Ver menos';
+    
+                        // Desplazarse al servicio seleccionado
+                        window.scrollTo({
+                            top: serviceContainer.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        // Ocultar el servicio seleccionado
+                        serviceDescription.classList.remove('show');
+                        serviceImage.classList.remove('show');
+                        serviceContainer.classList.remove('expanded');
+                        button.textContent = 'Ver más';
+                    }
+                });
             });
         });
     </script>
-
-<script>
-    // Obtener todos los elementos de lista de navegación principal
-    const navItems = document.querySelectorAll('nav > ul > li');
-
-    // Iterar sobre cada elemento de lista de navegación principal
-    navItems.forEach(item => {
-        // Agregar un controlador de eventos de clic a cada elemento
-        item.addEventListener('click', () => {
-            // Verificar si el elemento actual tiene un menú desplegable
-            const dropdownContent = item.querySelector('.dropdown-content');
-            if (dropdownContent) {
-                // Ocultar el menú desplegable
-                dropdownContent.classList.toggle('show');
-            }
-        });
-    });
-</script>
-    
-
-
     
 </body>
 </html>
+

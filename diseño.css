@@ -1,17 +1,14 @@
 /* Estilos generales */
-
-
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333333;
+    font-family: 'Arial', sans-serif;/* Establece la fuente del texto como Arial con fuentes genéricas sans-serif como respaldo */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo del documento */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo del documento */
+    background-color: #f0f0f0; /* Establece el color de fondo del cuerpo del documento como #f0f0f0 */
+    color: #333333; /* Establece el color del texto como #333333 */
 }
 
-
 /* Estilos generales para dispositivos móviles */
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 600px) {
     /* Ajustes generales */
     body {
         font-size: 16px; /* Tamaño de fuente aumentado para una mejor legibilidad */
@@ -22,145 +19,88 @@ body {
     nav ul {
         font-size: 18px; /* Tamaño de fuente aumentado para el menú */
     }
-    footer {
-        padding: 20px 10px; /* Reducción del espacio alrededor del pie de página */
-    }
-
-
+}
 
 /* Estilos para el encabezado */
 header {
-    background-color: #0abedae8;
-    color: hsl(0, 20%, 97%);
-    padding: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1450px; /* Ancho máximo */
-    margin: 0 auto;
+    background-color: #0abedae8; /* Establece el color de fondo del encabezado */
+    color: hsl(0, 20%, 97%); /* Establece el color del texto del encabezado utilizando un valor de matiz, saturación y luminosidad */
+    padding: 50px; /* Agrega un relleno interno de 50px al encabezado */
+    text-align: center; /* Centra el texto horizontalmente dentro del encabezado */
+    display: flex; /* Establece el contenedor del encabezado como un contenedor de diseño flexible */
+    flex-direction: column; /* Establece la dirección principal del diseño flexible como columna */
+    align-items: center; /* Centra los elementos secundarios del contenedor flex en el eje transversal */
+    max-width: 1450px; /* Establece el ancho máximo del encabezado */
+    margin: 0 auto; /* Centra el encabezado horizontalmente dentro de su contenedor */
 }
 
 header img {
-    max-width: 800px; /* Ajusta el tamaño máximo del logo */
-    margin-bottom: 10px; /* Ajusta el espacio entre el logo y el texto */
     max-width: 100%; /* Asegurar que la imagen del logo no supere el ancho del contenedor */
+    margin-bottom: 10px; /* Ajusta el espacio entre el logo y el texto */
 }
 
 header h1 {
-    text-shadow: 4px 4px 4px #202020;
-    margin-bottom: 30px;
+    text-shadow: 4px 4px 4px #202020; /* Agrega sombra al texto del título */
+    margin-bottom: 30px; /* Establece el margen inferior del título */
     font-size: 24px; /* Ajusta el tamaño del texto del título */
-    margin-top: 10px;
+    margin-top: 10px; /* Establece el margen superior del título */
 }
 
-header p { 
-    margin-bottom: 10px;
-    text-shadow:2px 2px 2px #070707;
-    font-size: 20px;
-}
 
 /* Estilos para la barra de navegación */
-
-
-@media screen and (max-width: 600px) {
-    nav ul li {
-        display: inline-block; /* Mostrar elementos en línea para dispositivos móviles */
-        padding: 10px 15px; /* Reducir el espacio entre elementos */
-        width: 100%; /* Establece el ancho al 100% */
-        float: none; /* Restablece el estilo de flotación */
-        font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
-    }
-
-    nav ul li ul {
-        position: static;  /* Cambia la posición a estática */
-        display: none; /* Oculta el menú desplegable */
-        margin-top: 0px; /* Agregar espacio superior entre elementos desplegables */
-        width: auto; /* Establece el ancho automático */
-    }
-
-    nav ul li ul li {
-        display: block;
-        padding: 10px;
-        width: 100%; /* Establece el ancho al 100% */
-        text-align: center; /* Centra el texto */
-    }
-
-    nav ul li ul li a {
-        width: 100%; /* Establece el ancho al 100% */
-    }
-
-    nav ul li a:hover {
-        background-color: #555; /* Cambia el color de fondo al pasar el ratón */
-    }
-}
-
-
 nav {
     background-color: #333; /* Cambia el color de fondo */
     overflow: hidden; /* Evita que el contenido se desborde */
+    max-width: 100%;
 }
-
 
 nav ul {
-    font-size: 30px ;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-flex ;
-    justify-content: center;
+    font-size: 30px; /* Establece el tamaño de fuente de los elementos de la lista */
+    list-style-type: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el relleno interno de la lista */
+    margin: 0; /* Elimina el margen externo de la lista */
+    display: inline-flex; /* Establece el contenedor de la lista como un contenedor de diseño flex en línea */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
 }
 
+
 nav ul li {
-    margin: 0; /* Eliminación del margen entre elementos del menú */
-    display: block;
-    padding: 10px;
+    margin: 0; /* Elimina el margen entre elementos del menú */
+    display: block; /* Hace que los elementos de la lista sean bloques */
+    padding: 10px; /* Agrega un relleno interno de 10px a los elementos de la lista */
     float: left; /* Alinea los elementos de la lista horizontalmente */
 }
 
+
 nav ul li a {
-    display: block;  /* Hace que los elementos de la lista sean bloques */
-    color: #0abedae8; /* Cambia el color del texto */
-    transition: color 0.3s ease;
-    padding:12px 20px; /* Espaciado interno */
+    display: block; /* Hace que los elementos de la lista sean bloques */
+    color: #0abedae8; /* Cambia el color del texto a un tono específico de azul */
+    transition: color 0.3s ease; /* Agrega una transición suave al cambio de color durante 0.3 segundos */
+    padding: 6px 10px; /* Espaciado interno, ajusta este valor para cambiar la longitud del área sensible al enlace */
     text-decoration: none; /* Elimina la subrayado de los enlaces */
-    text-align: center; /* Centra el texto */
+    text-align: center; /* Centra el texto horizontalmente dentro del área sensible al enlace */
 }
+
 
 /* Agrega un estilo para el menú desplegable */
 nav ul li ul {
     display: none; /* Oculta el menú desplegable por defecto */
     position: absolute; /* Posiciona el menú de forma absoluta */
     background-color: #333; /* Color de fondo del menú desplegable */
-    min-width: 15px; /* Ancho mínimo del menú desplegable */
+    min-width: 30px; /* Ancho mínimo del menú desplegable, ajusta según sea necesario */
+    font-size: 16px; /*tamaño del texto */
 }
-
 
 /* Estilos para los elementos del menú desplegable */
 nav ul li ul li {
     float: none; /* Restablece el estilo de flotación */
     position: relative; /* Posiciona los elementos relativamente */
-    min-width: 20px;
-}
-
-
-nav ul ul {
-    display: none;
-}
-
-
-nav ul li:hover > ul {
-    display: block;
-}
-
-
-nav ul li a:hover {
-    color: #070707;
+    min-width: 20px; /* Establece el ancho mínimo de los elementos del menú desplegable */
 }
 
 
 nav ul li ul li a {
-    padding: 10px 16px; /* Espaciado interno */
+    padding: 10px 12px; /* Espaciado interno */
     text-align: left; /* Alinea el texto a la izquierda */
     color: rgb(255, 255, 255); /* Cambia el color del texto */
 }
@@ -171,22 +111,37 @@ nav ul li:hover ul {
 }
 
 
- /* Ajustes para la sección de contacto */
- #imagen-contacto {
-    height: 300px; /* Altura reducida para dispositivos móviles */
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        font-size: 16px; /* Reducir el tamaño de la fuente para dispositivos móviles */
+        justify-content: flex-start; /* Alinear los elementos a la izquierda */
+        width: 100%; /* Asegurarse de que la barra de navegación ocupe todo el ancho disponible */
+    }
+
+    nav ul li {
+        padding: 10px 5px; /* Reducir el espaciado interno */
+    }
+
+    nav ul li a {
+        padding: 6px;/* Reducir el espaciado interno */
+    }
 }
+
+
 
 
 /* Estilos para las secciones de mantenimientos e instalaciones eléctricas */
 .services-section {
-    /* Estilos de la sección */
-    max-width: 1400px; /* Ancho máximo */
-    margin-bottom: 25px; /* Espacio inferior */
-    background-color: #60cfeb;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 1460px; /* Establece el ancho máximo de la sección */
+    margin-top: 10px; /* Establece el margen superior de la sección */
+    margin-bottom: 10px; /* Establece el margen inferior de la sección */
+    background-color: #60cfeb; /* Establece el color de fondo de la sección */
+    display: flex; /* Establece el contenedor de la sección como un contenedor de diseño flexible */
+    flex-wrap: wrap; /* Permite que los elementos de la sección se envuelvan en líneas si son demasiado anchos */
+    justify-content: space-between; /* Distribuye uniformemente los elementos de la sección a lo largo del eje principal, dejando un espacio igual entre ellos */
 }
+
 
 /* Estilos para los servicios en dispositivos móviles */
 @media only screen and (max-width: 600px) {
@@ -197,38 +152,42 @@ nav ul li:hover ul {
     }
 }
 
+/* Estilos para los grupos de servicios */
 .services-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 10px; /* Espacio entre grupos */
-    
+    display: flex; /* Establece el contenedor de grupo como un contenedor de diseño flexible */
+    flex-wrap: wrap; /* Permite que los elementos del grupo se envuelvan en líneas si son demasiado anchos */
+    justify-content: space-between; /* Distribuye uniformemente los elementos del grupo a lo largo del eje principal, dejando un espacio igual entre ellos */
+    margin-bottom: 10px; /* Establece el margen inferior del grupo */
 }
+
 
 
 /* Estilos para los servicios */
 .services {
-    width: calc(33.33% - 8px); /* Ajusta el ancho de cada servicio */
-    padding: 10px; /* Relleno interno */
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #ffffff;
-    margin-bottom: 20px; /* Agregar espacio inferior entre servicios */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    width: calc(33.33% - 8px); /* Establece el ancho de cada servicio en un tercio del contenedor menos 8px para el espacio entre los servicios */
+    padding: 10px; /* Agrega un relleno interno de 10px a cada servicio */
+    border: 2px solid #ccc; /* Establece un borde de 2px sólido de color #ccc alrededor de cada servicio */
+    border-radius: 10px; /* Establece un radio de borde de 10px para redondear las esquinas de cada servicio */
+    background-color: #ffffff; /* Establece el color de fondo de cada servicio en blanco */
+    margin-bottom: 20px; /* Agrega un espacio inferior de 20px entre servicios */
+    box-sizing: border-box; /* Hace que el ancho y el alto del elemento incluyan el relleno y el borde, pero no los márgenes */
 }
+
 
 .services:hover {
     background-color: #8ac6d1; /* Cambia el color de fondo al pasar el cursor */
 }
 
 
+/* Estilos para las imágenes de los servicios */
 .service-img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    max-width: 100%; /* Asegurar que las imágenes no superen el ancho del contenedor */
-    height: auto; /* Mantener la proporción de aspecto de las imágenes */
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    border-top-left-radius: 10px; /* Establece el radio de borde superior izquierdo de la imagen */
+    border-top-right-radius: 10px; /* Establece el radio de borde superior derecho de la imagen */
+    max-width: 100%; /* Asegura que las imágenes no superen el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
 }
+
 
 /* Estilos para los títulos de los servicios */
 .service-title {
@@ -240,36 +199,31 @@ nav ul li:hover ul {
 }
 
 
+/* Estilos para la descripción del servicio */
 .service-description {
-    margin-top: 10px;
+    margin-top: 10px; /* Agrega un margen superior de 10px a la descripción del servicio */
 }
 
-/* Estilos para el pie de página */
-footer {
-    background-color: #60cfeb;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    max-width: 1450px; /* Ancho máximo */
-    margin: 20px auto; /* Centrado horizontal */
-}
+
 
 
 /* Estilos CSS para ocultar la descripción por defecto */
 .service-description {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: visibility 0s, opacity 0.5s ease-out, height 0.5s ease-out;
+    visibility: hidden; /* Oculta la descripción */
+    opacity: 0; /* Establece la opacidad de la descripción a 0 */
+    height: 0; /* Establece la altura de la descripción a 0 */
+    overflow: hidden; /* Oculta el desbordamiento de la descripción */
+    transition: visibility 0s, opacity 0.5s ease-out, height 0.5s ease-out; /* Agrega una transición suave para la visibilidad, opacidad y altura */
 }
+
 
 /* Estilos CSS para mostrar la descripción cuando se hace clic en el botón */
 .service-description.show {
-    visibility: visible;
-    opacity: 1;
-    height: auto;
+    visibility: visible; /* Hace que la descripción sea visible */
+    opacity: 1; /* Establece la opacidad de la descripción a 1 para que sea completamente visible */
+    height: auto; /* Establece la altura de la descripción a 'auto' para mostrar todo su contenido */
 }
+
 
 /* Estilos CSS para el botón "Ver más/Ver menos" */
 .toggle-description {
@@ -291,34 +245,46 @@ footer {
 
 /* Estilos para la sección de "Conócenos" */
 .about-section {
-    background-image: url('imagenes/conocenos.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 8vw 2vw;
-    color: #ffffff; /* Color del texto a blanco */
-    height: auto; /* Cambiado a auto */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
+    background-image: url('imagenes/conocenos.jpg'); /* Establece la imagen de fondo de la sección */
+    background-size: cover; /* Escala la imagen de fondo para que cubra toda la sección */
+    background-position: center; /* Centra la imagen de fondo dentro de la sección */
+    padding: 1vw 1vw; /* Establece el relleno vertical y horizontal de la sección */
+    color: #ffffff; /* Establece el color de texto de la sección a blanco */
+    height: auto; /* Establece la altura de la sección a automática para ajustarse al contenido */
+    position: relative; /* Establece la posición de la sección como relativa */
+    display: flex; /* Establece el contenedor de la sección como un contenedor de diseño flexible */
+    flex-direction: column; /* Establece la dirección principal del diseño flexible como columna */
+    justify-content: center; /* Centra los elementos verticalmente dentro de la sección */
+    align-items: center; /* Centra los elementos horizontalmente dentro de la sección */
+    margin-top: 10px; /* Establece el margen superior de la sección */
+    margin-bottom: 10px; /* Establece el margen inferior de la sección */
 }
+
+
+/* Estilos para agregar un fondo semitransparente a la sección de "Conócenos" */
 .about-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1); /* Fondo más oscuro */
+    content: ""; /* Crea un contenido falso */
+    position: absolute; /* Establece la posición absoluta del elemento creado */
+    top: 0; /* Establece la posición superior del elemento creado */
+    left: 0; /* Establece la posición izquierda del elemento creado */
+    width: 100%; /* Establece el ancho del elemento creado */
+    height: 100%; /* Establece la altura del elemento creado */
+    background-color: rgba(0, 0, 0, 0.1); /* Establece un color de fondo semitransparente */
+    /* El valor 'rgba(0, 0, 0, 0.1)' representa un color negro con una opacidad del 10% */
 }
+
+
+./* Estilos para el contenido de la sección "Conócenos" */
 .about-content {
-    max-width: 100%;
-    width: 100%;
-    color: #ffffff;
-    text-align: center; /* Alinea el texto horizontalmente */
-    padding: 2vw; /* Agrega espacio alrededor del texto */
+    max-width: 100%; /* Establece el ancho máximo del contenido al 100% */
+    width: 100%; /* Establece el ancho del contenido al 100% */
+    color: #ffffff; /* Establece el color de texto del contenido a blanco */
+    text-align: center; /* Alinea el texto horizontalmente en el centro */
+    padding: 2vw; /* Agrega un relleno alrededor del contenido */
+    /* El valor '2vw' es un relleno relativo basado en el ancho de la ventana */
 }
+
+
 .about-content h2 {
     font-size: 4.2vw; /* Cambiado a unidades de vw */
     margin-bottom: 2vw; /* Cambiado a unidades de vw */
@@ -333,124 +299,114 @@ footer {
 }
 
 
-/* estilos barra de navegacion 2*/
-
+/* Estilos para el menú desplegable anidado */
 nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: #656060; /* Color de fondo del menú desplegable */
-    border-radius: 0 0 3px 3px;
-    padding: 0;
-    font-size: 20px;
+    display: none; /* Oculta el menú desplegable por defecto */
+    position: absolute; /* Posiciona el menú de forma absoluta */
+    background-color: #656060; /* Establece el color de fondo del menú desplegable */
+    border-radius: 0 0 3px 3px; /* Establece el radio de borde en las esquinas inferiores del menú */
+    padding: 0; /* Elimina el relleno interno del menú */
+    font-size: 20px; /* Establece el tamaño de fuente del texto del menú */
 }
 
+/* Muestra el menú desplegable cuando se pasa el ratón sobre el elemento principal */
 nav ul li:hover > ul {
-    display: block;
+    display: block; /* Muestra el menú desplegable */
 }
 
+/* Estilos para los elementos del menú desplegable */
 nav ul ul li {
-    width: 200px;
+    width: 200px; /* Establece el ancho de los elementos del menú desplegable */
 }
 
 nav ul ul li a {
-    color: #fff;
-    padding: 7px;
-    text-align: center;
-    display: block;
+    color: #fff; /* Establece el color del texto del menú desplegable */
+    padding: 7px; /* Agrega un relleno interno a los elementos del menú desplegable */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: block; /* Hace que los elementos del menú desplegable sean bloques */
 }
 
 nav ul ul li a:hover {
-    background-color: #0abedae8; /* Cambiar el color de fondo al pasar el cursor */
+    background-color: #0abedae8; /* Cambia el color de fondo al pasar el cursor sobre los elementos del menú desplegable */
 }
-
-
 
 /* Estilos para el pie de página */
 footer {
-    display: flex; /* Utiliza flexbox para colocar las secciones en fila */
-    flex-wrap: wrap; /* Permite que las secciones se ajusten automáticamente */
-    justify-content:space-between;; /* Alinea las secciones horizontalmente */
-    background-color: #f0f0f0; /* Color de fondo temporal */
-    padding: 20px 0; /* Espaciado interno del pie de página */
-    align-items: center;
-    height: 300px; /* Altura de la sección, ajustar según sea necesario */
+    display: flex; /* Establece el contenedor del pie de página como un contenedor de diseño flexible */
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    justify-content: center; /* Centra verticalmente los elementos del pie de página */
+    align-items: center; /* Centra horizontalmente los elementos del pie de página */
+    background-color: #f0f0f0; /* Establece el color de fondo del pie de página */
+    padding: 20px 0; /* Agrega un relleno vertical de 20px y un relleno horizontal de 0 al pie de página */
 }
 
-/* Estilos para la sección de la imagen de fondo */
+/* Estilos para la imagen de fondo */
 #imagen-contacto {
-    flex: 1; /* La imagen ocupa todo el espacio disponible */
-    height: 300px; /* Altura de la sección, ajustar según sea necesario */
-    background-image: url('imagenes/contacto.png'); /* Imagen de fondo */
-    background-size: contain; /* Ajusta la imagen para que cubra toda la sección */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    width: 100%; /* Establece el ancho de la imagen al 100% */
+    height: 200px; /* Establece la altura de la imagen */
+    background-image: url('imagenes/contacto.png'); /* Especifica la ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
     background-position: center; /* Centra la imagen */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px */
 }
 
 /* Estilos para el formulario de contacto */
 #formulario-contacto {
-    flex: 1; /* El formulario ocupa todo el espacio disponible */
-    padding: 20px; /* Espaciado interno del formulario */
-    background-color: #000000; /* Fondo del formulario */
-    color: white; /* Color del texto en el formulario */
-    text-align: center;
-    max-width: 300px;
-    margin: 0 auto;
-    
-}
-
-/* Estilos para el formulario de contacto en dispositivos móviles */
-@media only screen and (max-width: 900px) {
-    #formulario-contacto {
-        max-width: 100%; /* Ajusta el ancho máximo al 100% */
-        padding: 10px; /* Reducción del espaciado interno */
-        margin: 0; /* Eliminación del margen */
-    }
+    width: 100%; /* Establece el ancho del formulario al 100% */
+    max-width: 400px; /* Establece el ancho máximo del formulario */
+    background-color: #000000; /* Establece el color de fondo del formulario */
+    color: white; /* Establece el color del texto en el formulario */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 20px; /* Agrega un relleno interno de 20px alrededor del formulario */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total del formulario */
 }
 
 /* Estilos para los grupos de campos del formulario */
 .form-group {
-    margin-bottom: 20px; /* Espacio entre grupos de campos */
+    margin-bottom: 20px; /* Establece el margen inferior de cada grupo de campos */
 }
 
 .form-group label {
-    display: block; /* Mostrar las etiquetas en una línea nueva */
-    margin-bottom: 5px; /* Espacio entre etiquetas y campos */
+    display: block; /* Hace que las etiquetas de los campos sean bloques para que estén en líneas separadas */
+    margin-bottom: 5px; /* Establece el margen inferior de las etiquetas */
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%; /* Ancho completo */
-    padding: 8px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #333; /* Color de fondo del campo */
-    color: white; /* Color del texto */
+    width: 100%; /* Establece el ancho de los campos de entrada al 100% */
+    padding: 8px; /* Agrega un relleno interno de 8px a los campos de entrada y áreas de texto */
+    border: none; /* Elimina el borde de los campos de entrada y áreas de texto */
+    border-radius: 5px; /* Agrega bordes redondeados a los campos de entrada y áreas de texto */
+    background-color: #333; /* Establece el color de fondo de los campos de entrada y áreas de texto */
+    color: white; /* Establece el color del texto de los campos de entrada y áreas de texto */
 }
 
 .form-group textarea {
-    resize: vertical; /* Permitir redimensionar verticalmente */
+    resize: vertical; /* Permite que el área de texto se redimensione verticalmente */
 }
 
 button[type="submit"] {
-    background-color: #0abeda; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    background-color: #0abeda; /* Establece el color de fondo del botón de envío */
+    color: white; /* Establece el color del texto del botón de envío */
+    padding: 10px 20px; /* Agrega un relleno interno de 10px vertical y 20px horizontal al botón de envío */
+    border: none; /* Elimina el borde del botón de envío */
+    border-radius: 5px; /* Agrega bordes redondeados al botón de envío */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de envío */
 }
 
 button[type="submit"]:hover {
-    background-color: #0979a9; /* Cambiar el color de fondo al pasar el mouse */
+    background-color: #0979a9; /* Cambia el color de fondo del botón de envío al pasar el cursor sobre él */
 }
+
 
 
 /* Estilos para el pie de página final */
 .footer-bottom {
-    width: 100%; /* El pie de página final ocupa todo el ancho */
+    width: 100%; /* Establece que el pie de página final ocupe todo el ancho */
     text-align: center; /* Alinea el texto al centro */
-    margin-top: 20px; /* Espacio superior */
-    background-color: #0abedae8;
-    text-align: center;
-    color: #fff; /* Color de texto blanco */
+    margin-top: 20px; /* Agrega espacio en la parte superior */
+    background-color: #0abedae8; /* Establece el color de fondo */
+    color: #fff; /* Establece el color del texto como blanco */
 }
+
+    
