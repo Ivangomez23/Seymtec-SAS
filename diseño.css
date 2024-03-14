@@ -365,7 +365,7 @@ footer {
 /* Estilos para la imagen de fondo en dispositivos móviles */
 @media only screen and (max-width: 600px) {
     #imagen-contacto {
-        height: 200px; /* Mantén la misma altura en dispositivos móviles */
+        height: 300px; /* Mantén la misma altura en dispositivos móviles */
     }
 
     #formulario-contacto {
