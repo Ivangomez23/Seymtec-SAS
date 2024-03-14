@@ -274,7 +274,7 @@ nav ul li:hover ul {
 }
 
 
-./* Estilos para el contenido de la sección "Conócenos" */
+/* Estilos para el contenido de la sección "Conócenos" */
 .about-content {
     max-width: 100%; /* Establece el ancho máximo del contenido al 100% */
     width: 100%; /* Establece el ancho del contenido al 100% */
@@ -365,7 +365,7 @@ footer {
 /* Estilos para la imagen de fondo en dispositivos móviles */
 @media only screen and (max-width: 600px) {
     #imagen-contacto {
-        height: 300px; /* Mantén la misma altura en dispositivos móviles */
+        height: 305px; /* Mantén la misma altura en dispositivos móviles */
         max-width: 100%;
     }
 
